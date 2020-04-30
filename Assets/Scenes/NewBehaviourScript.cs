@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    public Rigidbody rb;
+
+    public float forwardForce = 2000f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,11 +15,28 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+
+
         if (Input.GetKey("w"))
         {
-            Debug.Log("Zhi is a babie");
+            rb.AddForce(0, 0, 75 * Time.deltaTime, ForceMode.VelocityChange);
+        }
+
+        if (Input.GetKey("d"))
+        {
+            rb.AddForce(50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+        if (Input.GetKey("a"))
+        {
+            rb.AddForce(-50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+        if (Input.GetKey("s"))
+        {
+            rb.AddForce(0, 0, -75 * Time.deltaTime, ForceMode.VelocityChange);
         }
     }
 }
