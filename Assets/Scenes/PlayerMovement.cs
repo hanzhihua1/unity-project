@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float maxSpeed = 25f;
     public float forwardForce = 2000f;
+    public float rotationSpeed = 1f;
+    public float maxRot = 25f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0, 25 * Time.deltaTime, 25 * Time.deltaTime, ForceMode.VelocityChange);
         }
-
+        
         if (Input.GetKey("d"))
         {
             rb.AddForce(50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
@@ -34,11 +36,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(-50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        }
-
-        if (Input.GetKey("s"))
-        {
-            rb.AddForce(0, -25 * Time.deltaTime, -25 * Time.deltaTime, ForceMode.VelocityChange);
         }
 
         var yz_mag = (float)Math.Sqrt(v.y * v.y + v.z * v.z); //Get the magnitude in YZ direction
