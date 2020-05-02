@@ -16,7 +16,7 @@ public class SpawnCars : MonoBehaviour
 
     }
 
-    float time_left = 5f;
+    float time_left = 3f;
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +26,7 @@ public class SpawnCars : MonoBehaviour
         if (time_left < 0)
         {
             time_left = spawnTimer;
-            Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
+            Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, Random.rotation);
 
         }
     }

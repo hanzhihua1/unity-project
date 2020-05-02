@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float maxSpeed = 25f;
+    public float maxSpeed = 15f;
     public float forwardForce = 2000f;
     public float rotationSpeed = 1f;
     public float maxRot = 25f;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         
         var v = rb.velocity;
 
-        rb.AddForce(0, 25 * Time.deltaTime, 25 * Time.deltaTime, ForceMode.VelocityChange);
+        rb.AddForce(0, 15 * Time.deltaTime, 15 * Time.deltaTime, ForceMode.VelocityChange);
 
         if (Input.GetKey("d"))
         {
