@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bus_Silver Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 186458, guid: 74b8b40c5d3c66c408d145d8c7c51c8b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 498590, guid: 74b8b40c5d3c66c408d145d8c7c51c8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

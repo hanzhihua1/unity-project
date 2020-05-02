@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &1936871251317099543
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9105282703631830128}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.048301496, y: 0.014184672, z: 0.019492172}
-  m_Center: {x: 0.0026986534, y: 0.0011507962, z: 9.313226e-10}
 --- !u!54 &260811632504612398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29,6 +16,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1936871251317099543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105282703631830128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.048301496, y: 0.014184672, z: 0.019492172}
+  m_Center: {x: 0.0026986534, y: 0.0011507962, z: 9.313226e-10}
 --- !u!114 &6303342498773945047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,7 +50,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 134962, guid: 1bc3a967e1e743b41b30f111c58ba985, type: 3}
       propertyPath: m_Name
-      value: Policecar
+      value: Policecar Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 134962, guid: 1bc3a967e1e743b41b30f111c58ba985, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 429084, guid: 1bc3a967e1e743b41b30f111c58ba985, type: 3}
       propertyPath: m_LocalPosition.x

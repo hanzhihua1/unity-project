@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_3_Blue Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 129146, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 455904, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
