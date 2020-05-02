@@ -16,7 +16,7 @@ public class SpawnCars : MonoBehaviour
 
     }
 
-    float time_left = 3f;
+    float time_left = 0;
     // Update is called once per frame
     void Update()
     {
