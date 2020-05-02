@@ -21,7 +21,6 @@ public class SpawnCars : MonoBehaviour
     void Update()
     {
         transform.position = player.position + offset;
-        Debug.Log(time_left);
         time_left -= Time.deltaTime;
         if (time_left < 0)
         {

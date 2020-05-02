@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         {
             var v_norm = new Vector3(v.x, v.y / yz_mag * maxSpeed, v.z / yz_mag * maxSpeed); //Create a new vector normalized in YZ
             rb.velocity = v_norm;
-            Debug.Log("clamp");
         }
     }
 }
