@@ -23,11 +23,8 @@ public class PlayerMovement : MonoBehaviour
         
         var v = rb.velocity;
 
-        if (Input.GetKey("w"))
-        {
-            rb.AddForce(0, 25 * Time.deltaTime, 25 * Time.deltaTime, ForceMode.VelocityChange);
-        }
-        
+        rb.AddForce(0, 25 * Time.deltaTime, 25 * Time.deltaTime, ForceMode.VelocityChange);
+
         if (Input.GetKey("d"))
         {
             rb.AddForce(50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
