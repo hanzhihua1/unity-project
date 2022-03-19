@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.AddForce(-50 * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
+            
         }
     }
 }
