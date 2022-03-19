@@ -2,7 +2,7 @@
 
 Dodge the falling cars! 
 
-Play here: [https://pixellation.itch.io/avalanche]((https://pixellation.itch.io/avalanche))
+Play here: [https://pixellation.itch.io/avalanche](https://pixellation.itch.io/avalanche)
 
 WASD to move, R to reload.
 
