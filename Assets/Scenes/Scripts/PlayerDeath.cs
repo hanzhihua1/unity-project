@@ -19,6 +19,13 @@ public class PlayerDeath : MonoBehaviour
         }
     }
 
+    void FixedUpdate() {
+        if (Input.GetKey("r")) 
+        {
+            RestartScene();
+        }    
+    }
+
     public void RestartScene()
     {
         Scene thisScene = SceneManager.GetActiveScene();
